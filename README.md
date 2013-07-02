@@ -4,7 +4,7 @@ DOM sugar for new browsers. JS DOM manipulation library for modern (Chrome 5+, F
 ## How does it work?
 DOM creates a mixin in the prototype chains of the HTMLElements and NodeLists. After this you can access all methods of DOM in context of the current node/list at the same time with using the native DOM elements' stuff like "appendChild", "addEventListener" etc.
 
-Also the library provides a more convenient and simplier [window.$](https://github.com/1999/dom/blob/master/dom.js#L473) and [window.$$](https://github.com/1999/dom/blob/master/dom.js#L510) methods to replace querySelector and querySelectorAll methods.
+Also the library provides a more convenient and simplier [window.$](#window-and-window-api) and [window.$$](#window-and-window-api) methods to replace querySelector and querySelectorAll methods.
 
 ## HTMLElement's extended API
 ```javascript
