@@ -1,12 +1,12 @@
-# What is this?
+## What is this?
 DOM sugar for new browsers. JS DOM manipulation library for modern (Chrome 5+, Firefox 3.6+, IE9+) browsers with a jQuery-like chainable syntax.
 
-# How does it work?
+## How does it work?
 DOM creates a mixin in the prototype chains of the HTMLElements and NodeLists. After this you can access all methods of DOM in context of the current node/list at the same time with using the native DOM elements' stuff like "appendChild", "addEventListener" etc.
 
 Also the library provides a more convenient and simplier [window.$](https://github.com/1999/dom/blob/master/dom.js#L473) and [window.$$](https://github.com/1999/dom/blob/master/dom.js#L510) methods to replace querySelector and querySelectorAll methods.
 
-# HTMLElement's extended API
+## HTMLElement's extended API
 ```javascript
 /**
  * Find closest ancestor node
@@ -174,7 +174,7 @@ removeData: function () {},
 css: function (key, value) {}
 ```
 
-# NodeList's extended API
+## NodeList's extended API
 ```javascript
 /**
  * Apply callback to each element of the list
@@ -218,7 +218,7 @@ addClass: function () {},
 removeClass: function () {}
 ```
 
-# window.$ and window.$$ API
+## window.$ and window.$$ API
 ```javascript
 /**
  * Shortened and more convenient "querySelector"
@@ -245,5 +245,5 @@ window.$ = function () {},
  */
 window.$$ = function () {}
 ```
-# License
+## License
 [Apache License, Version 2.0](https://github.com/1999/dom/blob/master/LICENSE)
