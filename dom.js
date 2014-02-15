@@ -2,7 +2,7 @@
  * DOM sugar for new browsers
  * https://github.com/1999/dom
  * ==========================================================
- * Copyright 2013 Dmitry Sorin <info@staypositive.ru>
+ * Copyright 2013-2014 Dmitry Sorin <info@staypositive.ru>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -256,10 +256,9 @@
         },
         /**
          * Toggle the existence of a class in an element's list of classes
-         * @type {Boolean}
          */
         toggleClass: function (className, force) {
-            return this.classList.toggle(className, force);
+            return this.classList.toggle.apply(this.classList, arguments);
         },
         /**
          * Get attribute(s) of a node or set it
